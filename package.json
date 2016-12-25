@@ -77,7 +77,21 @@
     },
     "lint": {
       "reflinks": true
-    }
+    },
+    "reflinks": [
+      "always-done",
+      "async-done",
+      "base",
+      "buble",
+      "charlike",
+      "commitizen",
+      "dezalgo",
+      "once",
+      "standard-version",
+      "start",
+      "verb",
+      "verb-generate-readme"
+    ]
   },
   "engines": {
     "node": ">=4",
