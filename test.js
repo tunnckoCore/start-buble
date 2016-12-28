@@ -10,9 +10,20 @@
 'use strict'
 
 const test = require('mukla')
-const startBuble = require('./index')
+const buble = require('./index')
+const read = require('start-read').default
+
+const noop = () => {}
 
 test('start-buble', (done) => {
-  startBuble()
-  done()
+  read()(['./index.js'])(noop)
+    .then(buble())
+    .then((fn) => fn(noop))
+    .then((files) => {
+      const code = files[0].data
+      test.strictEqual(/var startBuble =/.test(code), true)
+      test.strictEqual(/var bubleTransform = require/.test(code), true)
+      done()
+    })
+    .catch(done)
 })

@@ -12,10 +12,9 @@ const startBuble = (config) => (input) => {
     const bubleTransform = require('buble').transform
     const options = Object.assign({}, config)
 
-    return new Promise(resolve => {
-      const files = input.map(file => {
+    return new Promise((resolve) => {
+      const files = input.map((file) => {
         const result = bubleTransform(file.data, options)
-
         log(file.path)
 
         return {
