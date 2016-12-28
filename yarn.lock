@@ -1264,7 +1264,7 @@ globby@^5.0.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
+graceful-fs@^4.1.2, graceful-fs@^4.1.5, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
@@ -1847,6 +1847,10 @@ magic-string@^0.14.0:
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.14.0.tgz#57224aef1701caeed273b17a39a956e72b172462"
   dependencies:
     vlq "^0.2.1"
+
+makethen@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/makethen/-/makethen-0.1.0.tgz#dd69b9e7296deaf6566135f1496c82b3236c5d08"
 
 map-obj@^1.0.0, map-obj@^1.0.1:
   version "1.0.1"
@@ -2583,6 +2587,13 @@ standard@^8.6.0:
     eslint-plugin-react "~6.7.1"
     eslint-plugin-standard "~2.0.1"
     standard-engine "~5.2.0"
+
+start-read@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/start-read/-/start-read-0.3.0.tgz#84021c1f66d25020b6ad2f6c8b41718e53db489b"
+  dependencies:
+    graceful-fs "^4.1.5"
+    makethen "^0.1.0"
 
 stream-exhaust@^1.0.1:
   version "1.0.1"
