@@ -60,7 +60,7 @@ export const build = () => start(reporter())(
 
 ```
 
-Configuration object is passed directly to [buble][]'s `.transform` method, so check its docs at https://buble.surge.sh/guide/#using-the-javascript-api
+Configuration object is passed directly to [buble][]'s `.transform` method, so check its [docs](https://buble.surge.sh/guide/#using-the-javascript-api)
 
 ## Related
 - [always-done](https://www.npmjs.com/package/always-done): Handle completion and errors with elegance! Support for streams, callbacks, promises, child processes, async/await and sync functions. A drop-in replacement… [more](https://github.com/hybridables/always-done#readme) | [homepage](https://github.com/hybridables/always-done#readme "Handle completion and errors with elegance! Support for streams, callbacks, promises, child processes, async/await and sync functions. A drop-in replacement for [async-done][] - pass 100% of its tests plus more")
